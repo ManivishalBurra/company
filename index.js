@@ -54,9 +54,8 @@ window.addEventListener("scroll",function(){
   var offset=window.pageYOffset;
 
   var intViewportWidth = window.innerWidth;
-  var x;
-  if(intViewportWidth<=1080){x=1590;}
-  else {x=792;}
+  var x=792;
+
 
  if(offset>=3260 && offset<=4560 &&intViewportWidth>=1080)
  {

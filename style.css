@@ -2,13 +2,13 @@ html
 {
   scroll-behavior: smooth;
 }
+
 body
 {
   margin:0;
   padding:0;
   box-sizing:border-box;
-  overflow-x:hidden;
-
+  overflow-x: hidden;
 }
 
 h1,h2,h3,p,a,.logo
@@ -325,6 +325,7 @@ a
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
   background-image: url('images/spoon4.jpg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -730,17 +731,10 @@ a
 }
 @media(max-width:900px)
 {
-  #video
-  {
-    height: 3168px;
-  }
-  #slide2
-  {
-    height: 3168px;
-  }
+
   #slide3
   {
-    height: 3168px;
+
     background-position: center;
   }
   .everyproduct
@@ -753,6 +747,9 @@ a
     background-color:#3ebdb7;
   }
 }
+
+
+
 
 @media(max-width:788px)
 {
@@ -777,17 +774,9 @@ a
 
   @media(max-width:1080px) and (min-width:400px)
   {
-    #video
-    {
-      height: 1590px;
-    }
-    #slide2
-    {
-      height: 1590px;
-    }
     #slide3
     {
-      height: 1590px;
+
       background-position: center;
     }
     .writeAboutus
@@ -805,6 +794,128 @@ a
 
   }
 
+  @media only screen and (min-width:400px) and (max-width:850px)
+  {
+    .slideshow h1
+    {
+      padding: 0;
+      font-size: 47px;
+      display: inline;
+      position: relative;
+      left: 6%;
+      right:50%;
+    }
+    .slideshow p
+    {
+      padding: 0 100px;
+
+    }
+    .slide2write h1
+    {
+      left:3%;
+    }
+    .boo{
+
+      left: 0;
+    }
+    .aboutuspics,.valuepics
+    {
+      height: 30%;
+      background-position: center;
+    }
+    .valuewriteup,.writeAboutus
+    {
+      padding-top: 330px;
+    }
+
+    .values,.Aboutus
+    {
+      height: 1000px;
+    }
+    .main-content img
+    {
+      position: relative;
+
+    }
+    .btn
+    {
+      top:5px;
+    }
+    .drugs_list
+    {
+      padding: 19px;
+    }
+    .drugs_list h3,.andmore h1
+    {
+      font-size: 25px;
+    }
+
+    .product_icon
+    {
+      width: 10%;
+    }
+    .Reviewstitle h1
+    {
+      font-size: 25px;
+    }
+    .Reviewstitle h1
+    {
+      font-size: 30px;
+      text-align: center;
+    }
+    .description
+    {
+      padding: 0;
+    }
+    .description h2
+    {
+      font-size: 17px;
+    }
+    .reviews
+    {
+      background-color: none;
+      background: none;
+      margin-left: 20%;
+    }
+    .picture
+    {
+      width: 50%;
+      height: 20%;
+    }
+    .description p
+    {
+      font-size: 25px;
+      line-height: 35px;
+    }
+    .companyReviews
+    {
+      height: 700px;
+    }
+    #navbar
+    {
+      padding:0;
+      height: 6rem
+    }
+    .averxlogo
+    {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 1px;
+    }
+    .averxwrite
+    {
+      width: 60px;
+      height: auto;
+    }
+    .anchortags
+    {
+      display: none;
+    }
+    .contact a
+    {
+      font-size: 15px;
+    }
+  }
 
 
 ::-webkit-scrollbar{
