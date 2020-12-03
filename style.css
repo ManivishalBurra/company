@@ -34,7 +34,7 @@ h3
 }
 p
 {
-  font-size: 25px;
+  font-size: 94%;
   font-weight: lighter;
   line-height: 40px;
 }
@@ -79,7 +79,7 @@ a
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 88%;
   font-weight: bold;
 }
 
@@ -159,7 +159,7 @@ a
 }
 .navlinkes
 {
-  font-size: 16px;
+  font-size: 100%;
   font-weight: bold;
 }
 
@@ -178,7 +178,7 @@ a
 
 #slide2
 {
-  height: 812px;
+  height: 792px;
   background-image: url('images/veterinarian-doctor-ready-give-medicine-shot-pig-farm1.jpg');
   background-size: cover;
   background-attachment: fixed;
@@ -245,7 +245,7 @@ a
 .writeups
 { position: absolute;
   margin: 160px 0 0 100px;
-  right: 100px;
+  right: 6%;
   width: 68%;
   height: 472px;
   background-color:none;
@@ -254,7 +254,7 @@ a
 }
 .writeAboutus
 {
-  padding: 100px 150px 100px 250px;
+  padding: 100px 18% 100px 28%;
   position: relative;
   bottom: 50px;
 }
@@ -278,10 +278,11 @@ a
   position: absolute ;
   bottom: 0;
   transform: translate(-50%,-50%);
-  left: 368px;
+  left: 35%;
 }
 .btn{
   position: relative;
+  left: 19%;
   display: block;
   color: black;
   font-size: 14px;
@@ -314,13 +315,16 @@ a
 { position: absolute;
   overflow: hidden;
   top: 150px;
-  left: 100px;
+  left: 10%;
   width: 30%;
   height: 480px;
   background-color: black;
   display: block;
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
+  background-image: url('images/spoon4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .aboutuspics img
 { position: relative;
@@ -369,7 +373,7 @@ a
 }
 .valuewriteup
 {
-  padding: 100px 150px 100px 100px;
+  padding: 100px 18% 100px 12%;
 }
 
 
@@ -614,6 +618,8 @@ a
   display: block;
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
+  background-image: url("images/laurus-labs-strikes-gold-by-moving-up-the-value-chain-but-theres-a-steeper-climb-ahead-.jpg");
+  background-size: cover;
 }
 .picture img
 {
@@ -733,6 +739,27 @@ a
    height: 380px;
   }
 }
+  @media(max-width:1080px)
+  {
+    #slide2
+    {
+      background-size: 1360px;
+      background-repeat: no-repeat;
+    }
+    .writeAboutus
+    {
+      padding: 12% 12% 12% 24%;
+    }
+    .valuewriteup
+    {
+      padding: 100px 18% 100px 12%;
+    }
+    .valuewrites
+    {
+      margin: 120px 0 0 50px;
+    }
+  }
+
 
 
 ::-webkit-scrollbar{
