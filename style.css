@@ -44,7 +44,7 @@ nav
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 14vh;
+  height: 8rem;
   background-color: none;
   position:fixed;
   top: 0;
@@ -143,7 +143,7 @@ a
 }
 
 .imagext
-{transition: 1s;
+{transition: 0.8s;
  display:inline-block;
  height: 60px;
  margin-bottom:1px;
@@ -151,7 +151,7 @@ a
 }
 .imagetext
 {
-  transition: 1s;
+  transition: 0.8s;
   display:inline-block;
   height: 10px;
   margin-bottom: 3px;
@@ -168,6 +168,7 @@ a
  height: 792px;
  background-image: url('images/chimney-2823866_1920.jpg');
  background-size: cover;
+ overflow: hidden;
  background-attachment: fixed;
  background-repeat: no-repeat;
 }
@@ -181,6 +182,7 @@ a
   height: 792px;
   background-image: url('images/veterinarian-doctor-ready-give-medicine-shot-pig-farm1.jpg');
   background-size: cover;
+  overflow: hidden;
   background-attachment: fixed;
   image-rendering:auto;
 }
@@ -205,7 +207,7 @@ a
   height: 792px;
   background-image: url('images/happy-girl-beagle-puppies-gray.jpg');
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment:fixed;
   image-rendering:auto;
 }
 .slide3write
@@ -463,7 +465,7 @@ a
 }
 
 .product
-{ width: inherit;
+{ width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -472,7 +474,7 @@ a
 }
 .drugs_list
 {
-  width: 300px;
+  width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -682,13 +684,13 @@ a
 }
 .backdrop-blur {
   background-color: #373a40;
-  min-height: 8vh;
+  height: 5rem;
 }
 
 /* if backdrop support: very transparent and blurred */
 @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
   .backdrop-blur {
-    transition: 0.3s;
+    transition: 0.5s;
     background-color: rgba(255,255,255,0.8);
     -webkit-backdrop-filter: blur(20px);
 
@@ -726,6 +728,39 @@ a
     backdrop-filter: blur(10px);
   }
 }
+@media(max-width:900px)
+{
+  #video
+  {
+    height: 3168px;
+  }
+  #slide2
+  {
+    height: 3168px;
+  }
+  #slide3
+  {
+    height: 3168px;
+    background-position: center;
+  }
+  .everyproduct
+  {transition: 0.5s;
+    overflow: hidden;
+    width: 9rem;
+    height: 9rem;
+    margin: 0 80px;
+    border-radius: 100%;
+    background-color:#3ebdb7;
+  }
+}
+
+@media(max-width:788px)
+{
+  nav
+  {
+    min-height:10vh;
+  }
+}
 
 @media(max-width:1230px)
 {
@@ -739,12 +774,21 @@ a
    height: 380px;
   }
 }
-  @media(max-width:1080px)
+
+  @media(max-width:1080px) and (min-width:400px)
   {
+    #video
+    {
+      height: 1590px;
+    }
     #slide2
     {
-      background-size: 1360px;
-      background-repeat: no-repeat;
+      height: 1590px;
+    }
+    #slide3
+    {
+      height: 1590px;
+      background-position: center;
     }
     .writeAboutus
     {
@@ -758,6 +802,7 @@ a
     {
       margin: 120px 0 0 50px;
     }
+
   }
 
 

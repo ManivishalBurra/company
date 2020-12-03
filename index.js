@@ -53,16 +53,23 @@ const parallax=document.getElementById("parallax");
 window.addEventListener("scroll",function(){
   var offset=window.pageYOffset;
 
- if(offset>=3260 && offset<=4560)
+  var intViewportWidth = window.innerWidth;
+  var x;
+  if(intViewportWidth<=1080){x=1590;}
+  else {x=792;}
+
+ if(offset>=3260 && offset<=4560 &&intViewportWidth>=1080)
  {
   offset=offset-3260;
   parallax.style.backgroundPositionY="-"+offset*0.1+"px";
  }
  else
- {
+ {  console.log('oldoffset: '+offset);
     video.style.backgroundPositionY="-"+offset*0.1+"px";
+    offset=offset-x;
     slide2.style.backgroundPositionY="-"+offset*0.1+"px";
-    offset=offset-800;
+    offset=offset-x;
     slide3.style.backgroundPositionY="-"+offset*0.1+"px";
+    console.log('newoffset: '+ offset);
  }
 });
