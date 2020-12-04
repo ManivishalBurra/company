@@ -46,7 +46,7 @@ nav
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 8rem;
+  height: 14vh;
   background-color: none;
   position:fixed;
   top: 0;
@@ -829,7 +829,10 @@ a
     {
       height: 100vh;
     }
-
+    nav
+    {
+      
+    }
     .boo h1
     {
       font-size: 6vw;
@@ -942,7 +945,7 @@ a
     #navbar
     {
       padding:0;
-      height: 6rem
+
     }
     .averxlogo
     {
