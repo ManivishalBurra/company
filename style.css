@@ -222,7 +222,7 @@ a
 .slide3write
 {
   position: relative;
-  top: 50vh;
+  top: 39vh;
   right: 25%;
   font-size: 25px;
 }
@@ -775,11 +775,13 @@ a
     border-radius: 100%;
     background-color:#3ebdb7;
   }
+  .everyproduct:hover
+  { transition:0.5s;
+    width: 45vw;
+    height: 45vw;
+    border-radius: 10px;
+  }
 }
-
-
-
-
 @media(max-width:788px)
 {
   nav
@@ -808,9 +810,16 @@ a
 
       background-position: center;
     }
+    .writeups
+    {
+      margin-top: 17vh;
+      left:20%;
+      right: 0px;
+    }
     .writeAboutus
     {
       padding: 12% 12% 12% 24%;
+
     }
     .valuewriteup
     {
@@ -825,50 +834,56 @@ a
 
   @media only screen and (min-width:400px) and (max-width:850px)
   {
-    #video,#slide2,#slide3
+    #video
     {
       height: 100vh;
     }
+    #slide2,#slide3
+    {
+      display: none;
+    }
+
     nav
     {
-      display:none;
+      display: none;
     }
     .boo h1
     {
-      font-size: 6vw;
+      font-size: 8vw;
       padding-right:0;
     }
     .boo p
     {
       padding-right:0;
+      font-size: 4vw;
     }
     .aboutuspics,.valuepics
     {
-      height: 30%;
+
       background-position: center;
       top:21vh;
-      height: 24vh;
+      width: 35vw;
+      height: 28vh;
     }
     .valuewriteup,.writeAboutus
     {
       padding-top: 10vh;
       padding-bottom:5vh;
     }
-
-    .values,.Aboutus
+    .valuewriteup
     {
-      height: 80vh;
+      padding-right: 16vw;
+      padding-left: 0;
     }
     .main-content img
     {
       position: relative;
 
     }
-
     .btn{
       font-size: 1.8vw;
       padding: 1.8vw 9vw;
-      top:5px;
+      top:5vw;
     }
     .all_product h1
     {
@@ -885,10 +900,18 @@ a
     width: 25vw;
     height: 5vh;
     margin: 55px;
-    font-size: 15px;
+    font-size: 10px;
+    }
+    .writeAboutus h1 {
+      font-size: 29px;
+    }
+
+    .writeAboutus p
+    {
+      font-size: 18px;
     }
     .writeAboutus h2 {
-    font-size: 5vw;
+    font-size: 7vw;
     margin: 0;
    }
     .drugs_list
