@@ -714,7 +714,7 @@ a
 }
 .backdrop-blur {
   background-color: #373a40;
-  height: 5rem;
+  min-height: 10vh;
 }
 
 /* if backdrop support: very transparent and blurred */
