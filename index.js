@@ -74,6 +74,5 @@ window.addEventListener("scroll",function(){
  else
  {
    video.style.backgroundPositionY=offset*0+"px";
-   video.style.backgroundPositionY=offset*0.1+"px";
  }
 });
