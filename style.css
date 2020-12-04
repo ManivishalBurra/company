@@ -32,7 +32,7 @@ h3
 {
   font-size: 2rem;
   text-align: center;
-  color: white;
+  color: black;
 }
 p
 {
@@ -135,7 +135,10 @@ a
 {
   list-style: none;
 }
-
+.sym a
+{
+   text-transform:lowercase;
+}
 .symba
 {
   transition: 1s;
@@ -280,6 +283,7 @@ a
 {
    font-size: 20px;
    line-height: 30px;
+   padding-right:15px;
 }
 
 .middle{
@@ -647,6 +651,7 @@ a
   flex-direction: column;
   align-items: center;
   justify-content:center;
+  text-align:center;
 }
 
 .contactitems
@@ -702,6 +707,10 @@ a
   text-decoration: none;
   color: #373a40;
   font-size: 15px;
+}
+.glinks .fas
+{
+   font-size:20px;
 }
 .backdrop-blur {
   background-color: #373a40;
