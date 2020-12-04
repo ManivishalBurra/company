@@ -46,7 +46,7 @@ nav
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 14vh;
+  min-height: 14vh;
   background-color: none;
   position:fixed;
   top: 0;
