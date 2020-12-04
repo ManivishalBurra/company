@@ -846,7 +846,7 @@ a
 
     nav
     {
-     
+      display: none;
     }
     .boo h1
     {
@@ -969,7 +969,7 @@ a
     #navbar
     {
       padding:0;
-      display:none;
+
     }
     .averxlogo
     {

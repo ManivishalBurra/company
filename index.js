@@ -1,6 +1,6 @@
 $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
-});
+},{passive:true});
 
 
 window.addEventListener("scroll",function(){
@@ -30,7 +30,7 @@ window.addEventListener("scroll",function(){
    document.querySelector("div").classList.remove("color");
    $(".navlinks").css("color","black");
  }
-});
+},{passive:true});
 //this is for the closing of nav bar
 var lastScrollTop=0;
 navbar=document.getElementById("navbar");
@@ -45,7 +45,7 @@ else
 navbar.style.top="0";
 }
 lastScrollTop=scrollTop;
-});
+},{passive:true});
 //this is for poping of averxDrugs title;
 
 //this is for parallax effect;
@@ -73,6 +73,6 @@ window.addEventListener("scroll",function(){
  }
  else
  {
-   video.style.backgroundPositionY=offset*0+"px";
+   video.style.backgroundPositionY="-"+offset*0+"px";
  }
-});
+},{passive:true});
