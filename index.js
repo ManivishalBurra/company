@@ -60,15 +60,9 @@ window.addEventListener("scroll",function(){
  if(offset>=3260 && offset<=4560 &&intViewportWidth>=600)
  {
   offset=offset-3260;
-  parallax.style.backgroundPositionY="-"+offset*0.1+"px";
+ 
  }
  else if(intViewportWidth>=600)
- {  console.log('intViewportWidth: '+intViewportWidth);
-    video.style.backgroundPositionY="-"+offset*0.1+"px";
-    offset=offset-x;
-    slide2.style.backgroundPositionY="-"+offset*0.1+"px";
-    offset=offset-x;
-    slide3.style.backgroundPositionY="-"+offset*0.1+"px";
-    console.log('newoffset: '+ offset);
+ {  
  }
 });
