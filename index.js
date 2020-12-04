@@ -57,13 +57,13 @@ window.addEventListener("scroll",function(){
   var x=792;
 
 
- if(offset>=3260 && offset<=4560 &&intViewportWidth>=1080)
+ if(offset>=3260 && offset<=4560 &&intViewportWidth>=600)
  {
   offset=offset-3260;
   parallax.style.backgroundPositionY="-"+offset*0.1+"px";
  }
- else
- {  console.log('oldoffset: '+offset);
+ else if(intViewportWidth>=600)
+ {  console.log('intViewportWidth: '+intViewportWidth);
     video.style.backgroundPositionY="-"+offset*0.1+"px";
     offset=offset-x;
     slide2.style.backgroundPositionY="-"+offset*0.1+"px";

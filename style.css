@@ -9,6 +9,8 @@ body
   padding:0;
   box-sizing:border-box;
   overflow-x: hidden;
+  width:100vw;
+  height: 100vh;
 }
 
 h1,h2,h3,p,a,.logo
@@ -34,8 +36,8 @@ h3
 }
 p
 {
-  font-size: 94%;
-  font-weight: lighter;
+  font-size: 1.8vw;
+  font-weight: normal;
   line-height: 40px;
 }
 nav
@@ -53,6 +55,10 @@ nav
   background: none;
   color: white;
   z-index: 2;
+}
+.boo h1
+{
+  font-size: 3vw;
 }
 .Companylogo
 {
@@ -165,7 +171,7 @@ a
 
 #video
 {
- height: 792px;
+ height: 100vh;
  background-image: url('images/chimney-2823866_1920.jpg');
  background-size: cover;
  overflow: hidden;
@@ -179,7 +185,7 @@ a
 
 #slide2
 {
-  height: 792px;
+  height: 100vh;
   background-image: url('images/veterinarian-doctor-ready-give-medicine-shot-pig-farm1.jpg');
   background-size: cover;
   overflow: hidden;
@@ -204,7 +210,7 @@ a
 }
 #slide3
 {
-  height: 792px;
+  height: 100vh;
   background-image: url('images/happy-girl-beagle-puppies-gray.jpg');
   background-size: cover;
   background-attachment:fixed;
@@ -213,13 +219,13 @@ a
 .slide3write
 {
   position: relative;
-  top: 35%;
+  top: 50vh;
   right: 25%;
   font-size: 25px;
 }
 .slide3write h1,.slide3write p
 {
-  padding: 0 29%;
+  padding: 0 30vw;
 }
 .slide3write
 {
@@ -635,6 +641,14 @@ a
   height: 550px;
   overflow: hidden;
 }
+.doghouse
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+
 .contactitems
 {position: relative;
   top: 100px;
@@ -657,10 +671,16 @@ a
   overflow: hidden;
   border-radius: 50% 50% 0 0 ;
 }
+.dog
+{
+  font-size: 3vw;
+  color:#373a40;
+}
 .contactgif img
 {
   position: relative;
-  width: 150%;
+  width: 180%;
+  right: 40%;
 }
 .maps
 {
@@ -681,7 +701,7 @@ a
 { margin: 10px;
   text-decoration: none;
   color: #373a40;
-  font-size: 20px;
+  font-size: 15px;
 }
 .backdrop-blur {
   background-color: #373a40;
@@ -740,8 +760,8 @@ a
   .everyproduct
   {transition: 0.5s;
     overflow: hidden;
-    width: 9rem;
-    height: 9rem;
+    width: 25vw;
+    height: 25vw;
     margin: 0 80px;
     border-radius: 100%;
     background-color:#3ebdb7;
@@ -796,64 +816,83 @@ a
 
   @media only screen and (min-width:400px) and (max-width:850px)
   {
-    .slideshow h1
+    #video,#slide2,#slide3
     {
-      padding: 0;
-      font-size: 47px;
-      display: inline;
-      position: relative;
-      left: 6%;
-      right:50%;
+      height: 100vh;
     }
-    .slideshow p
-    {
-      padding: 0 100px;
 
-    }
-    .slide2write h1
+    .boo h1
     {
-      left:3%;
+      font-size: 6vw;
+      padding-right:0;
     }
-    .boo{
-
-      left: 0;
+    .boo p
+    {
+      padding-right:0;
     }
     .aboutuspics,.valuepics
     {
       height: 30%;
       background-position: center;
+      top:21vh;
+      height: 24vh;
     }
     .valuewriteup,.writeAboutus
     {
-      padding-top: 330px;
+      padding-top: 10vh;
+      padding-bottom:5vh;
     }
 
     .values,.Aboutus
     {
-      height: 1000px;
+      height: 80vh;
     }
     .main-content img
     {
       position: relative;
 
     }
-    .btn
-    {
+
+    .btn{
+      font-size: 1.8vw;
+      padding: 1.8vw 9vw;
       top:5px;
     }
+    .all_product h1
+    {
+      padding: 5vw 0 0 10vw;
+      color:black;
+      font-size: 4.4vw;
+    }
+    .andmore h1
+    {
+      padding: 0;
+    }
+    .viewproducts {
+    border-radius: 5px;
+    width: 25vw;
+    height: 5vh;
+    margin: 55px;
+    font-size: 15px;
+    }
+    .writeAboutus h2 {
+    font-size: 5vw;
+    margin: 0;
+   }
     .drugs_list
     {
       padding: 19px;
     }
     .drugs_list h3,.andmore h1
     {
-      font-size: 25px;
+      font-size: 5vw;
     }
 
     .product_icon
     {
       width: 10%;
     }
+
     .Reviewstitle h1
     {
       font-size: 25px;
