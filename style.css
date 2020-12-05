@@ -72,11 +72,13 @@ nav
   transition: 1s;
   display: block;
   margin: 7px 20px;
+  width: auto;
   height: 95px;
 }
 .averxwrite
 { transition: 1s;
   display: block;
+  width: auto;
   height: 15px;
   margin: 0 10px;
 }
@@ -685,6 +687,7 @@ a
 {
   position: relative;
   width: 180%;
+  height: auto;
   right: 40%;
 }
 .maps
@@ -841,6 +844,7 @@ a
     #video
     {
       height: 100vh;
+      background-attachment: scroll;
     }
     #slide2,#slide3
     {
