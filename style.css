@@ -824,16 +824,46 @@ a {
 
   #slide2,
   #slide3 {
-    display: none
+    display: none;
   }
 }
-
+.nav-toggle{
+  display: none;
+}
 
 @media only screen and (min-width:100px) and (max-width:700px) {
 
 
+   .backdrop-blur
+   {
+     background: none;
+     background-color: none;
+   }
+
+   @supports ((-webkit-backdrop-filter:blur(0em)) or (backdrop-filter:blur(0em))) {
+     .backdrop-blur {
+       transition: .5s;
+       background-color: none;
+       -webkit-backdrop-filter: blur(0px);
+       backdrop-filter: blur(0px)
+     }
+   }
+
+   @supports ((-webkit-backdrop-filter:blur(2em)) or (backdrop-filter:blur(2em))) {
+     .explaination {
+       transition: .3s;
+       background-color: none;
+       -webkit-backdrop-filter: blur(0px);
+       width: 30%;
+       padding: 0 30px;
+       border-radius: 20px;
+       backdrop-filter: blur(0px)
+     }
+   }
 
   .nav-toggle {
+    display:block;
+    visibility: visible;
     position: relative;
     padding: 10px;
     background: transparent;
