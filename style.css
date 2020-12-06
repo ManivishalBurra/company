@@ -51,7 +51,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 14vh;
+  min-height: 30px;
   background-color: none;
   position: fixed;
   top: 0;
@@ -719,7 +719,7 @@ a {
 
 .backdrop-blur {
   background-color: #373a40;
-  min-height: 10vh
+  min-height: 20px;
 }
 
 @supports ((-webkit-backdrop-filter:blur(2em)) or (backdrop-filter:blur(2em))) {
@@ -799,13 +799,15 @@ a {
   }
 }
 
-@media(max-width:1080px) and (min-width:400px) {
+@media(max-width:1080px) and (min-width:450px) {
   #slide3 {
     background-position: center
   }
 
   .writeups {
     margin-top: 17vh;
+    margin-left: 0;
+    padding-left: 61px;
     left: 20%;
     right: 0
   }
@@ -832,18 +834,21 @@ a {
 }
 
 @media only screen and (min-width:100px) and (max-width:700px) {
-
-
+  .maps
+  {
+    display: none;
+  }
    .backdrop-blur
    {
-     background: none;
-     background-color: none;
+     background: white;
+     height: 13vw;
+     background-color: white;
    }
 
    @supports ((-webkit-backdrop-filter:blur(0em)) or (backdrop-filter:blur(0em))) {
      .backdrop-blur {
        transition: .5s;
-       background-color: none;
+       background-color: white;
        -webkit-backdrop-filter: blur(0px);
        backdrop-filter: blur(0px)
      }
@@ -852,7 +857,7 @@ a {
    @supports ((-webkit-backdrop-filter:blur(2em)) or (backdrop-filter:blur(2em))) {
      .explaination {
        transition: .3s;
-       background-color: none;
+       background-color: white;
        -webkit-backdrop-filter: blur(0px);
        width: 30%;
        padding: 0 30px;
@@ -961,7 +966,7 @@ a {
   .btn {
     font-size: 1.8vw;
     padding: 1.8vw 9vw;
-    top: 5vw
+    top:0;
   }
 
   .all_product h1 {
@@ -981,7 +986,12 @@ a {
     margin: 55px;
     font-size: 10px
   }
-
+  .writeups
+  {
+    margin-top: 20%;
+    padding-left: 80px;
+    width: 60%;
+  }
   .writeAboutus h1 {
     font-size: 29px
   }
@@ -991,7 +1001,7 @@ a {
   }
 
   .writeAboutus h2 {
-    font-size: 7vw;
+    font-size: 35px;
     margin: 0
   }
 
@@ -1022,7 +1032,7 @@ a {
   }
 
   .description h2 {
-    font-size: 17px
+    font-size: 27px
   }
 
   .reviews {
@@ -1037,7 +1047,7 @@ a {
   }
 
   .description p {
-    font-size: 25px;
+    font-size: 35px;
     line-height: 35px
   }
 
@@ -1059,7 +1069,21 @@ a {
     width: 60px;
     height: auto
   }
+  .imagext {
+    transition: .8s;
+    display: inline-block;
+    height: 50px;
+    margin-bottom: 1px;
+    margin-top: 0px
+  }
 
+  .imagetext {
+    transition: .8s;
+    display: inline-block;
+    height: 7px;
+    width: auto;
+    margin-bottom: 1px
+  }
   .anchortags {
     display: none
   }
@@ -1068,7 +1092,29 @@ a {
     font-size: 15px
   }
 }
+@media only screen and (max-width:500px) and (min-width:100px)
+{
+  .valuewrites
+  {
+    margin-left: 40px;
+  }
+  .writeAboutus
+  {
+    top:100px;
+  }
+  .writeAboutus h1 {
+    font-size: 19px
+  }
 
+  .writeAboutus p {
+    font-size: 11px
+  }
+
+  .writeAboutus h2 {
+    font-size: 13px;
+    margin: 0
+  }
+}
 ::-webkit-scrollbar {
   width: 8px;
   background: #000
